@@ -4,8 +4,8 @@ Gain hands-on experience with Python, major text libraries, and tools like LangC
 Whether you're a business professional or a beginner in IT or NLP, this course will empower you to leverage LLM for a wide range of business and text processing tasks. 
 Get ready to embark on an exciting journey into the world of LLM and Generative AI!
 
-## Week 1: Introduction to Generative AI
-- Day 1: 
+## Module 1: Introduction to Large Language Models
+- **Introduction to Generative AI**
    - Overview of Generative AI and its real-world applications
    - Introduction to the concept of Long Language Models (LLM)
    - Roles and applications of LLM in various business industries
@@ -14,21 +14,21 @@ Get ready to embark on an exciting journey into the world of LLM and Generative 
    - Setting up the development environment
    - Introduction to Python as the main programming language in the training
 
-- Day 2:
+- **Introduction to Python for Language Preprocessing**
    - Python basics for beginners
    - Variables, data types, basic operations, and functions in Python
    - Control structures: Conditional statements and loops
    - Demonstration of Python usage in simple text processing
 
-- Day 3: 
+- **Basics of Language Processing**
    - Introduction to Natural Language Processing (NLP)
    - Exploring word embeddings and their role in language models
    - Introduction to major text libraries in Python (e.g., NLTK, spaCy)
    - Understanding text preprocessing and tokenization
    - Demonstration of library usage for simple text tasks
 
-## Week 2: Creating Conservational AI with Large Language Models for Business
-- Day 4: 
+## Module 2: Creating Conservational AI with Large Language Models for Business
+- **Introduction to Large Language Models: Architecture, Transformer, and Key Concepts**
    - Overview of Large Language Models and their Architecture
    - Understanding what is Transformer
    - Explanation of pre-training and fine-tuning of language models
@@ -37,7 +37,7 @@ Get ready to embark on an exciting journey into the world of LLM and Generative 
    - Explanation of the LangChain concept
    - Setting the .env token key
 
-- Day 5:
+- **Building Question-Answering Systems with Large Language Models**
    - Introduction to Question-Answering System
    - Steps involved in connecting databases with LLM
    - Basics of building a Question-Answering System using LLM with a database
@@ -46,45 +46,46 @@ Get ready to embark on an exciting journey into the world of LLM and Generative 
    - Steps involved in connecting CSV data with LLM
    - Demonstration of using LangChain and OpenAI to build a Question-Answering System with text data
 
-- Day 6:
+- **Text Generation with HuggingFace**
    - Introduction to the Text Generation model in HuggingFace
    - Setting the .env token key
    - Applying HuggingFace's Inference API to use LLM without OpenAI credits
    - Integrating HuggingFace's Inference API into the previously built Question-Answering System
    - Demonstration of using HuggingFace's Inference API to build a Question-Answering System
 
-## Week 3: Understanding Embeddings in LLM
-- Day 7:
+## Module 3: Understanding Embeddings in LLM
+- **Understanding Embeddings in Large Language Models (LLM) for Natural Language Processing**
    - Basic concepts of embeddings in LLM
    - Usage of embeddings in natural language processing
    - Demonstration of embeddings usage in text analysis
 
-- Day 8:
+- **Advanced Embeddings in Large Language Models (LLM) for Text Processing**
    - In-depth understanding of embeddings in LLM
    - Introduction to popular embedding techniques like Word2Vec and FastText
    - Implementation of embeddings in text processing using Python
    - Demonstration of embedding techniques in text processing tasks
 
-- Day 9:
+- **Advanced Applications of Embeddings in Text Processing with Large Language Models (LLM)**
    - Application of embeddings in advanced text processing
    - Usage of embeddings for text classification and contextual understanding
    - Demonstration of embeddings usage in advanced tasks
 
-## Week 4: Using LLM for Web Scraping and Prompt Design
-- Day 10:
+## Module 4: Using LLM for Web Scraping and Prompt Design
+- **Leveraging Large Language Models (LLM) for Web Scraping and Information Extraction**
    - Using LLM for web scraping
    - Introduction to the steps involved in connecting website URLs with LLM
    - Introduction to LlamaIndex and its usage in web scraping
    - Demonstration of using LangChain and OpenAI to build a Question-Answering System with website data
 
-- Day 11:
+- **Optimizing Large Language Models (LLM) for Local Deployment and Performance Enhancement**
    - Building a locally hosted (offline) LLM using LlamaIndex and OPT (Instruction-Tuning LLM)
    - Demonstration of using LlamaIndex and OPT to host LLM locally
    - Designing effective prompts for LLM
    - Using LangChain's Caching to enhance LLM performance
    - Demonstration of prompt design and caching to maximize LLM usage
 
-- Day 12:
+- **Ethical Considerations and Future Implications of Generative AI with Large Language Models (LLM)**
+   - A language for LLM prompt design: Guidance
    - Understanding the ethical considerations of Generative AI
    - Impact on privacy, bias, and misinformation
    - Responsible user of Large Language Models in society
