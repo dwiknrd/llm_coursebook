@@ -8,8 +8,6 @@ Get ready to embark on an exciting journey into the world of LLM and Generative 
 - **Introduction to Generative AI**
    - Overview of Generative AI and its real-world applications
    - Introduction to the concept of Long Language Models (LLM)
-   - Roles and applications of LLM in various business industries
-   - Ethical considerations and responsible use of Generative AI
    - Demonstration of LLM usage in various business contexts
    - Setting up the development environment
    - Introduction to Python as the main programming language in the training
@@ -18,7 +16,6 @@ Get ready to embark on an exciting journey into the world of LLM and Generative 
    - Python basics for beginners
    - Variables, data types, basic operations, and functions in Python
    - Control structures: Conditional statements and loops
-   - Demonstration of Python usage in simple text processing
 
 - **Basics of Language Processing**
    - Introduction to Natural Language Processing (NLP)
