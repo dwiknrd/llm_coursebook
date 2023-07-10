@@ -33,7 +33,7 @@ Get ready to embark on an exciting journey into the world of LLM and Generative 
    - Introduction to popular Large Language Models like GPT-3, GPT-2, and BERT
    - Understanding the capabilities and limitations of Large Language Models
    - Explanation of the LangChain concept
-   - Setting the .env token key
+   - Setting the API key and .env
 
 - **Building Question-Answering Systems with Large Language Models**
    - Introduction to Question-Answering System
