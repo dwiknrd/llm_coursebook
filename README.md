@@ -25,14 +25,15 @@ Get ready to embark on an exciting journey into the world of LLM and Generative 
    - Demonstration of library usage for simple text tasks
 
 ## Module 2: Creating Conservational AI with Large Language Models for Business
-- **Introduction to Large Language Models: Architecture, Transformer, and Key Concepts**
+
+- **Large Language Models: Architecture, Transformer, and Key Concepts**
    - Overview of Large Language Models and their Architecture
    - Understanding what is Transformer
    - Explanation of pre-training and fine-tuning of language models
    - Introduction to popular Large Language Models like GPT-3, GPT-2, and BERT
-   - Understanding the capabilities of and limitations of Large Language Models
+   - Understanding the capabilities and limitations of Large Language Models
    - Explanation of the LangChain concept
-   - Setting the .env token key
+   - Setting the API key and .env
 
 - **Building Question-Answering Systems with Large Language Models**
    - Introduction to Question-Answering System
