@@ -75,9 +75,8 @@ Get ready to embark on an exciting journey into the world of LLM and Generative 
    - Introduction to LlamaIndex and its usage in web scraping
    - Demonstration of using LangChain and OpenAI to build a Question-Answering System with website data
 
-- **Optimizing Large Language Models (LLM) for Local Deployment and Performance Enhancement**
-   - Building a locally hosted (offline) LLM using LlamaIndex and OPT (Instruction-Tuning LLM)
-   - Demonstration of using LlamaIndex and OPT to host LLM locally
+- **Optimizing Large Language Models (LLM) for Performance Enhancement**
+   - Demonstration of using LlamaIndex
    - Designing effective prompts for LLM
    - Using LangChain's Caching to enhance LLM performance
    - Demonstration of prompt design and caching to maximize LLM usage
