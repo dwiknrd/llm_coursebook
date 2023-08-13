@@ -15136,25 +15136,97 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-<div id="cell-id=90cec18d" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=9b07df12" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Background">Background<a class="anchor-link" href="#Background">&#182;</a></h2><p>The coursebook is part of the <strong>Large Language Models Specialization</strong> developed by <a href="https://algorit.ma/">Algoritma</a>. The coursebook is intended for a restricted audience only, i.e. the individuals and organizations having received this coursebook directly from the training organization. It may not be reproduced, distributed, translated or adapted in any form outside these individuals and organizations without permission.Algoritma is a data science education center based in Jakarta. We organize workshops and training programs to help working professionals and students gain mastery in various data science sub-fields: data visualization, machine learning, data modeling, statistical inference etc.</p>
+<p><strong>Table of contents</strong><a id='toc0_'></a></p>
+<ul>
+<li><a href="#toc1_1_">Background</a></li>
+<li><a href="#toc2_">Python Programming Basics for Large Language Models (LLMs)</a><ul>
+<li><a href="#toc2_1_">Training Objective</a></li>
+<li><a href="#toc2_2_">Python Programming Evironment Setup</a><ul>
+<li><a href="#toc2_2_1_">Introduction to Python programming language</a></li>
+<li><a href="#toc2_2_2_">Installing Python using Miniconda</a></li>
+<li><a href="#toc2_2_3_">Setting-up the Virtual Environment</a></li>
+</ul>
+</li>
+<li><a href="#toc2_3_">Jupyter Notebook</a><ul>
+<li><a href="#toc2_3_1_">Markdown and Code Cells</a></li>
+<li><a href="#toc2_3_2_">Command Mode and Edit Mode</a></li>
+</ul>
+</li>
+<li><a href="#toc2_4_">Introduction to Python for Language Preprocessing</a><ul>
+<li><a href="#toc2_4_1_">Basic Python Programming</a><ul>
+<li><a href="#toc2_4_1_1_">Variables and Keywords</a></li>
+<li><a href="#toc2_4_1_2_">Python Data Types</a></li>
+<li><a href="#toc2_4_1_3_">Dive Deeper: Python Data Types</a></li>
+<li><a href="#toc2_4_1_4_">Python Data Structures</a></li>
+<li><a href="#toc2_4_1_5_">Dive Deeper: dictionaries</a></li>
+<li><a href="#toc2_4_1_6_">Python Functions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#toc2_5_">Introduction to Libraries</a><ul>
+<li><a href="#toc2_5_1_">Implementation of Importing Classes and Functions Using Transformers</a></li>
+<li><a href="#toc2_5_2_">Dive Deeper: Using Hugging Face Transformers for Text Generation</a></li>
+</ul>
+</li>
+<li><a href="#toc2_6_">Basics of Language Processing</a><ul>
+<li><a href="#toc2_6_1_">Using <code>NLTK</code> dan <code>spaCy</code> for simple text processing</a><ul>
+<li><a href="#toc2_6_1_1_">Importing the Required Libraries</a></li>
+<li><a href="#toc2_6_1_2_">Preprocessing the Text</a></li>
+<li><a href="#toc2_6_1_3_">Lemmatization or Stemming (Optional)</a></li>
+<li><a href="#toc2_6_1_4_">Named Entity Recognition (NER) using spaCy (Optional)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#toc2_7_">Reading External Data using Pandas</a><ul>
+<li><a href="#toc2_7_1_">Reading <code>*.csv</code> Files</a></li>
+<li><a href="#toc2_7_2_">Reading SQLite Databases</a></li>
+</ul>
+</li>
+<li><a href="#toc2_8_">Database Connection</a></li>
+</ul>
+</li>
+<li><a href="#toc3_">Summary</a></li>
+</ul>
+<!-- vscode-jupyter-toc-config
+    numbering=false
+    anchor=true
+    flat=false
+    minLevel=1
+    maxLevel=6
+    /vscode-jupyter-toc-config -->
+<!-- THIS CELL WILL BE REPLACED ON TOC UPDATE. DO NOT WRITE YOUR TEXT IN THIS CELL -->
 
 </div>
 </div>
 </div>
 </div>
-<div id="cell-id=a912e791" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=ef3c53aa" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Python-Programming-Basics-for-Large-Language-Models-(LLMs)">Python Programming Basics for Large Language Models (LLMs)<a class="anchor-link" href="#Python-Programming-Basics-for-Large-Language-Models-(LLMs)">&#182;</a></h1><h2 id="Training-Objective">Training Objective<a class="anchor-link" href="#Training-Objective">&#182;</a></h2><p>Generative AI has revolutionized various industries, offering innovative solutions and driving advancements in natural language understanding. Throughout this module, we will delve into the concept of LLM, its applications in diverse business industries, and the ethical considerations associated with its use. We will witness the real-world impact of LLM through engaging demonstrations in different business contexts. Additionally, we will set up the development environment, with Python as the primary programming language, to equip you with the necessary skills for this training. Before diving into the core discussions, we will lay the groundwork by covering Python basics for language preprocessing, introducing the fundamentals of natural language processing, and exploring essential text libraries.</p>
+<h2 id="Background"><a id="toc1_1_" /><a href="#toc0_">Background</a><a class="anchor-link" href="#Background">&#182;</a></h2><p>The coursebook is part of the <strong>Large Language Models Specialization</strong> developed by <a href="https://algorit.ma/">Algoritma</a>. The coursebook is intended for a restricted audience only, i.e. the individuals and organizations having received this coursebook directly from the training organization. It may not be reproduced, distributed, translated or adapted in any form outside these individuals and organizations without permission.Algoritma is a data science education center based in Jakarta. We organize workshops and training programs to help working professionals and students gain mastery in various data science sub-fields: data visualization, machine learning, data modeling, statistical inference etc.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div id="cell-id=7b3b7d63" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Python-Programming-Basics-for-Large-Language-Models-(LLMs)"><a id="toc2_" /><a href="#toc0_">Python Programming Basics for Large Language Models (LLMs)</a><a class="anchor-link" href="#Python-Programming-Basics-for-Large-Language-Models-(LLMs)">&#182;</a></h1><h2 id="Training-Objective"><a id="toc2_1_" /><a href="#toc0_">Training Objective</a><a class="anchor-link" href="#Training-Objective">&#182;</a></h2><p>Generative AI has revolutionized various industries, offering innovative solutions and driving advancements in natural language understanding. Throughout this module, we will delve into the concept of LLM, its applications in diverse business industries, and the ethical considerations associated with its use. We will witness the real-world impact of LLM through engaging demonstrations in different business contexts. Additionally, we will set up the development environment, with Python as the primary programming language, to equip you with the necessary skills for this training. Before diving into the core discussions, we will lay the groundwork by covering Python basics for language preprocessing, introducing the fundamentals of natural language processing, and exploring essential text libraries.</p>
 <ul>
 <li><p><strong>Python Programming Environment Setup</strong></p>
 <ul>
@@ -15188,19 +15260,25 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <li>Demonstration of library usage for simple text tasks</li>
 </ul>
 </li>
+<li><p><strong>Reading External Data using Pandas</strong></p>
+<ul>
+<li>Read Data from CSV Files</li>
+<li>Connect to SQL Databases</li>
+</ul>
+</li>
 </ul>
 
 </div>
 </div>
 </div>
 </div>
-<div id="cell-id=0832ec95" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=d1f83e5f" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Python-Programming-Evironment-Setup">Python Programming Evironment Setup<a class="anchor-link" href="#Python-Programming-Evironment-Setup">&#182;</a></h2><h3 id="Introduction-to-Python-programming-language">Introduction to Python programming language<a class="anchor-link" href="#Introduction-to-Python-programming-language">&#182;</a></h3><p>In this lesson, we'll introduce you to the Python programming language, which is a crucial tool for working with Large Language Models (LLMs). Python's simplicity, readability, and extensive libraries make it an ideal choice for both beginners and experienced programmers alike.</p>
+<h2 id="Python-Programming-Evironment-Setup"><a id="toc2_2_" /><a href="#toc0_">Python Programming Evironment Setup</a><a class="anchor-link" href="#Python-Programming-Evironment-Setup">&#182;</a></h2><h3 id="Introduction-to-Python-programming-language"><a id="toc2_2_1_" /><a href="#toc0_">Introduction to Python programming language</a><a class="anchor-link" href="#Introduction-to-Python-programming-language">&#182;</a></h3><p>In this lesson, we'll introduce you to the Python programming language, which is a crucial tool for working with Large Language Models (LLMs). Python's simplicity, readability, and extensive libraries make it an ideal choice for both beginners and experienced programmers alike.</p>
 <ul>
 <li><strong>What is Python?</strong></li>
 </ul>
@@ -15214,7 +15292,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </ul>
 </li>
 </ul>
-<h3 id="Installing-Python-using-Miniconda">Installing Python using Miniconda<a class="anchor-link" href="#Installing-Python-using-Miniconda">&#182;</a></h3><p><strong>1. Installing Python</strong></p>
+<h3 id="Installing-Python-using-Miniconda"><a id="toc2_2_2_" /><a href="#toc0_">Installing Python using Miniconda</a><a class="anchor-link" href="#Installing-Python-using-Miniconda">&#182;</a></h3><p><strong>1. Installing Python</strong></p>
 <p>To use Python, we first need to install it on our system. One convenient way to do this is by using Miniconda, a minimal installer for the Conda package manager. Conda simplifies package management and environment creation, which is crucial for maintaining consistent development environments.</p>
 <p><strong>2. Installing Miniconda</strong></p>
 <p>Miniconda is a lightweight installer that includes only Conda and its dependencies, making it easier to manage Python packages and environments.
@@ -15227,13 +15305,13 @@ After installation, open a new terminal or command prompt to verify that Conda i
 </div>
 </div>
 </div>
-<div id="cell-id=0c52594e" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=98a932b4" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Setting-up-the-Virtual-Environment">Setting-up the Virtual Environment<a class="anchor-link" href="#Setting-up-the-Virtual-Environment">&#182;</a></h3><p>Conda allows us to create isolated environments for our projects, each with its own dependencies. This is essential for managing packages and avoiding conflicts. A Conda virtual environment is a self-contained directory that holds a <strong>specific collection</strong> of packages and their dependencies. It allows us to create isolated environments for different projects, each with its own set of libraries, versions, and dependencies. This is particularly useful for managing the complexity of software development, ensuring that our projects don't interfere with each other and avoiding conflicts between package versions.</p>
+<h3 id="Setting-up-the-Virtual-Environment"><a id="toc2_2_3_" /><a href="#toc0_">Setting-up the Virtual Environment</a><a class="anchor-link" href="#Setting-up-the-Virtual-Environment">&#182;</a></h3><p>Conda allows us to create isolated environments for our projects, each with its own dependencies. This is essential for managing packages and avoiding conflicts. A Conda virtual environment is a self-contained directory that holds a <strong>specific collection</strong> of packages and their dependencies. It allows us to create isolated environments for different projects, each with its own set of libraries, versions, and dependencies. This is particularly useful for managing the complexity of software development, ensuring that our projects don't interfere with each other and avoiding conflicts between package versions.</p>
 <p><strong>Why Use Conda Virtual Environments?</strong></p>
 <img title="llm problem" src="assets/environment.png" width="70%">
 <ul>
@@ -15282,15 +15360,15 @@ After installation, open a new terminal or command prompt to verify that Conda i
 </div>
 </div>
 </div>
-<div id="cell-id=79771d05" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=147b28af" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Jupyter-Notebook">Jupyter Notebook<a class="anchor-link" href="#Jupyter-Notebook">&#182;</a></h2><p>Jupyter Notebooks are powerful and interactive coding environments that allow you to combine code, text explanations, visualizations, and more within a single document. They're widely used in data science, machine learning, and various other fields where code and explanations go hand in hand.</p>
+<h2 id="Jupyter-Notebook"><a id="toc2_3_" /><a href="#toc0_">Jupyter Notebook</a><a class="anchor-link" href="#Jupyter-Notebook">&#182;</a></h2><p>Jupyter Notebooks are powerful and interactive coding environments that allow you to combine code, text explanations, visualizations, and more within a single document. They're widely used in data science, machine learning, and various other fields where code and explanations go hand in hand.</p>
 <p>Let's delve into Markdown and Code cells in Jupyter Notebooks, as well as the concept of Command Mode and Edit Mode for interacting with cells.</p>
-<h3 id="Markdown-and-Code-Cells">Markdown and Code Cells<a class="anchor-link" href="#Markdown-and-Code-Cells">&#182;</a></h3><p>Jupyter Notebooks allow you to work with two primary types of cells: Markdown cells and Code cells.</p>
+<h3 id="Markdown-and-Code-Cells"><a id="toc2_3_1_" /><a href="#toc0_">Markdown and Code Cells</a><a class="anchor-link" href="#Markdown-and-Code-Cells">&#182;</a></h3><p>Jupyter Notebooks allow you to work with two primary types of cells: Markdown cells and Code cells.</p>
 <ol>
 <li><strong>Markdown Cells:</strong><ul>
 <li>Markdown cells are used for adding text explanations, headings, lists, images, links, and more using Markdown syntax.</li>
@@ -15309,7 +15387,7 @@ After installation, open a new terminal or command prompt to verify that Conda i
 </div>
 </div>
 </div>
-<div id="cell-id=0472d0f1" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=3dfa6474" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15358,7 +15436,7 @@ After installation, open a new terminal or command prompt to verify that Conda i
 </div>
 </div>
 </div>
-</div><div id="cell-id=57d17691" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div id="cell-id=1c2bcc60" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15398,13 +15476,13 @@ cheers!
 </div>
 
 </div>
-<div id="cell-id=f33f11fb" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=7ec4e811" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Command-Mode-and-Edit-Mode">Command Mode and Edit Mode<a class="anchor-link" href="#Command-Mode-and-Edit-Mode">&#182;</a></h3><p>Jupyter Notebooks operate in two main modes: Command Mode and Edit Mode. These modes allow you to perform different actions on cells and within the notebook interface.</p>
+<h3 id="Command-Mode-and-Edit-Mode"><a id="toc2_3_2_" /><a href="#toc0_">Command Mode and Edit Mode</a><a class="anchor-link" href="#Command-Mode-and-Edit-Mode">&#182;</a></h3><p>Jupyter Notebooks operate in two main modes: Command Mode and Edit Mode. These modes allow you to perform different actions on cells and within the notebook interface.</p>
 <ol>
 <li><p><strong>Command Mode:</strong></p>
 <ul>
@@ -15447,36 +15525,36 @@ cheers!
 </div>
 </div>
 </div>
-<div id="cell-id=111b4e97" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=b090ed9c" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Introduction-to-Python-for-Language-Preprocessing">Introduction to Python for Language Preprocessing<a class="anchor-link" href="#Introduction-to-Python-for-Language-Preprocessing">&#182;</a></h2><p>Python is a powerful programming language that offers a wide range of tools and libraries for language preprocessing tasks in the field of natural language processing (NLP). This section provides an overview of Python's essential concepts and features relevant to language preprocessing.</p>
+<h2 id="Introduction-to-Python-for-Language-Preprocessing"><a id="toc2_4_" /><a href="#toc0_">Introduction to Python for Language Preprocessing</a><a class="anchor-link" href="#Introduction-to-Python-for-Language-Preprocessing">&#182;</a></h2><p>Python is a powerful programming language that offers a wide range of tools and libraries for language preprocessing tasks in the field of natural language processing (NLP). This section provides an overview of Python's essential concepts and features relevant to language preprocessing.</p>
 
 </div>
 </div>
 </div>
 </div>
-<div id="cell-id=9b0fc49d" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=d84547ae" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Basic-Python-Programming">Basic Python Programming<a class="anchor-link" href="#Basic-Python-Programming">&#182;</a></h3>
+<h3 id="Basic-Python-Programming"><a id="toc2_4_1_" /><a href="#toc0_">Basic Python Programming</a><a class="anchor-link" href="#Basic-Python-Programming">&#182;</a></h3>
 </div>
 </div>
 </div>
 </div>
-<div id="cell-id=54ad38d3" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=9e63ace8" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Variables-and-Keywords">Variables and Keywords<a class="anchor-link" href="#Variables-and-Keywords">&#182;</a></h4><p>In Python, variables are used to store data values. They serve as containers for holding values that can be referenced and manipulated throughout the program.</p>
+<h4 id="Variables-and-Keywords"><a id="toc2_4_1_1_" /><a href="#toc0_">Variables and Keywords</a><a class="anchor-link" href="#Variables-and-Keywords">&#182;</a></h4><p>In Python, variables are used to store data values. They serve as containers for holding values that can be referenced and manipulated throughout the program.</p>
 <ul>
 <li><strong>Variable Declaration</strong>: To declare a variable in Python, you simply assign a value to it using the assignment operator <code>(=)</code>. The variable name should be meaningful and follow certain naming conventions (e.g., start with a letter or underscore, avoid using reserved keywords).</li>
 </ul>
@@ -15484,7 +15562,7 @@ cheers!
 </div>
 </div>
 </div>
-</div><div id="cell-id=bcd31cce" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div id="cell-id=8b813cce" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15626,7 +15704,7 @@ cheers!
 </div>
 </div>
 </div>
-<div id="cell-id=2b12e4ea" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=189c25c2" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15639,19 +15717,19 @@ Examples of keywords: <code>if</code>, <code>else</code>, <code>for</code>, <cod
 </div>
 </div>
 </div>
-<div id="cell-id=641c3ca8" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=b0a2ec72" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Python-Data-Types">Python Data Types<a class="anchor-link" href="#Python-Data-Types">&#182;</a></h4><p>In Python, data types represent the kind of values that variables can hold. Each data type has its own characteristics and behavior. Here's an explanation of some commonly used data types in Python along with examples:</p>
+<h4 id="Python-Data-Types"><a id="toc2_4_1_2_" /><a href="#toc0_">Python Data Types</a><a class="anchor-link" href="#Python-Data-Types">&#182;</a></h4><p>In Python, data types represent the kind of values that variables can hold. Each data type has its own characteristics and behavior. Here's an explanation of some commonly used data types in Python along with examples:</p>
 
 </div>
 </div>
 </div>
 </div>
-<div id="cell-id=20eab3ac" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=5c2bb6bb" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15860,7 +15938,7 @@ Examples of keywords: <code>if</code>, <code>else</code>, <code>for</code>, <cod
 </div>
 </div>
 </div>
-</div><div id="cell-id=b5a83858" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div id="cell-id=b91f3b78" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15902,13 +15980,13 @@ Examples of keywords: <code>if</code>, <code>else</code>, <code>for</code>, <cod
 </div>
 
 </div>
-<div id="cell-id=dc18dec8" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=d74b5fee" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Dive-Deeper:-Python-Data-Types">Dive Deeper: Python Data Types<a class="anchor-link" href="#Dive-Deeper:-Python-Data-Types">&#182;</a></h4><ol>
+<h4 id="Dive-Deeper:-Python-Data-Types"><a id="toc2_4_1_3_" /><a href="#toc0_">Dive Deeper: Python Data Types</a><a class="anchor-link" href="#Dive-Deeper:-Python-Data-Types">&#182;</a></h4><ol>
 <li><p>Calculate the result of the following expression and assign it to the variable 'result'. Then, print the data type of 'result'.</p>
 <pre><code>(5 * 3) + (10 / 2)
 </code></pre>
@@ -15921,19 +15999,19 @@ Examples of keywords: <code>if</code>, <code>else</code>, <code>for</code>, <cod
 </div>
 </div>
 </div>
-<div id="cell-id=a7cb3901" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=e8418d2d" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Python-Data-Structures">Python Data Structures<a class="anchor-link" href="#Python-Data-Structures">&#182;</a></h4><p>Python provides several built-in data structures that allow you to organize and store collections of data. These data structures are essential for efficient data manipulation and are widely used in Python programming. Here's an explanation of some commonly used data structures along with examples:</p>
+<h4 id="Python-Data-Structures"><a id="toc2_4_1_4_" /><a href="#toc0_">Python Data Structures</a><a class="anchor-link" href="#Python-Data-Structures">&#182;</a></h4><p>Python provides several built-in data structures that allow you to organize and store collections of data. These data structures are essential for efficient data manipulation and are widely used in Python programming. Here's an explanation of some commonly used data structures along with examples:</p>
 
 </div>
 </div>
 </div>
 </div>
-<div id="cell-id=f54f30ec" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=331701f3" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -16253,7 +16331,7 @@ Examples of keywords: <code>if</code>, <code>else</code>, <code>for</code>, <cod
 </div>
 </div>
 </div>
-</div><div id="cell-id=2fcb5a4e" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div id="cell-id=c272d306" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -16293,13 +16371,13 @@ Examples of keywords: <code>if</code>, <code>else</code>, <code>for</code>, <cod
 </div>
 
 </div>
-<div id="cell-id=ef26ea5d" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=c7f9086d" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Dive-Deeper:-dictionaries">Dive Deeper: dictionaries<a class="anchor-link" href="#Dive-Deeper:-dictionaries">&#182;</a></h4><p>Create a dictionary 'person' with the following key-value pairs:</p>
+<h4 id="Dive-Deeper:-dictionaries"><a id="toc2_4_1_5_" /><a href="#toc0_">Dive Deeper: dictionaries</a><a class="anchor-link" href="#Dive-Deeper:-dictionaries">&#182;</a></h4><p>Create a dictionary 'person' with the following key-value pairs:</p>
 <pre><code>```
 'name': 'Alice', 'age': 30, 'city': 'New York'
 ```
@@ -16310,7 +16388,7 @@ Examples of keywords: <code>if</code>, <code>else</code>, <code>for</code>, <cod
 </div>
 </div>
 </div>
-<div id="cell-id=8807bfe3" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=4c873621" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -16403,7 +16481,7 @@ Examples of keywords: <code>if</code>, <code>else</code>, <code>for</code>, <cod
 </div>
 </div>
 </div>
-</div><div id="cell-id=e669102a" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div id="cell-id=5f6ce4ef" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -16454,13 +16532,13 @@ Odd number
 </div>
 
 </div>
-<div id="cell-id=1f741c22" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=5cfdebbe" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Python-Functions">Python Functions<a class="anchor-link" href="#Python-Functions">&#182;</a></h4><p>A function is a useful device that groups together a set of statements so they can be run more than once. They can also let us specify parameters that can serve as inputs to the functions.</p>
+<h4 id="Python-Functions"><a id="toc2_4_1_6_" /><a href="#toc0_">Python Functions</a><a class="anchor-link" href="#Python-Functions">&#182;</a></h4><p>A function is a useful device that groups together a set of statements so they can be run more than once. They can also let us specify parameters that can serve as inputs to the functions.</p>
 <p>On a more fundamental level, functions allow us to not have to repeatedly write the same code again and again. If you remember back to the lessons on strings and lists, remember that we used a function len() to get the length of a string. Since checking the length of a sequence is a common task you would want to write a function that can do this repeatedly at command.</p>
 <p><strong>Why even use functions?</strong></p>
 <p>Put simply, you should use functions when you plan on using a block of code multiple times. The function will allow you to call the same block of code without having to write it multiple times. This in turn will allow you to create more complex Python scripts. To really understand this though, we should actually write our own functions!</p>
@@ -16469,7 +16547,7 @@ Odd number
 </div>
 </div>
 </div>
-<div id="cell-id=666f6c6a" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=a4df8b27" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -16908,7 +16986,7 @@ Lita from Algoritma
 </div>
 
 </div>
-<div id="cell-id=6b9b7c3d" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=c087be4b" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -16922,25 +17000,25 @@ Lita from Algoritma
 </div>
 </div>
 </div>
-<div id="cell-id=51b6b9ce" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=881467b7" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Introduction-to-Libraries">Introduction to Libraries<a class="anchor-link" href="#Introduction-to-Libraries">&#182;</a></h2><p><strong>Libraries</strong></p>
+<h2 id="Introduction-to-Libraries"><a id="toc2_5_" /><a href="#toc0_">Introduction to Libraries</a><a class="anchor-link" href="#Introduction-to-Libraries">&#182;</a></h2><p><strong>Libraries</strong></p>
 <p>A library in programming is a collection of pre-written code, functions, classes, and tools that you can use to perform various tasks without having to write everything from scratch. Libraries provide solutions to common problems and allow you to leverage the expertise of other developers. They can save you time and effort, increase the reliability of your code, and enable you to focus on the unique aspects of your project.</p>
 <p>Libraries come in various forms, from general-purpose libraries that provide fundamental programming capabilities to domain-specific libraries tailored for specific tasks, such as data analysis, web development, machine learning, and more.</p>
 <p><strong>Modules</strong></p>
 <p>A module is a single file containing Python code that groups related functions, classes, and variables together. Modules provide a way to organize code, making it more modular, reusable, and maintainable. By breaking your code into modules, you can focus on specific functionalities and keep your codebase organized.</p>
 <p>Python's modular architecture allows you to create your own modules and use them as building blocks in larger projects. Additionally, Python comes with a rich set of built-in modules (part of the Python Standard Library) that cover a wide range of tasks, from file I/O to math operations.</p>
-<h3 id="Implementation-of-Importing-Classes-and-Functions-Using-Transformers">Implementation of Importing Classes and Functions Using Transformers<a class="anchor-link" href="#Implementation-of-Importing-Classes-and-Functions-Using-Transformers">&#182;</a></h3><p>When we're working with external libraries, like the Hugging Face Transformers library, we need to import the classes, functions, and resources we want to use into our code. This process involves:</p>
+<h3 id="Implementation-of-Importing-Classes-and-Functions-Using-Transformers"><a id="toc2_5_1_" /><a href="#toc0_">Implementation of Importing Classes and Functions Using Transformers</a><a class="anchor-link" href="#Implementation-of-Importing-Classes-and-Functions-Using-Transformers">&#182;</a></h3><p>When we're working with external libraries, like the Hugging Face Transformers library, we need to import the classes, functions, and resources we want to use into our code. This process involves:</p>
 
 </div>
 </div>
 </div>
 </div>
-<div id="cell-id=f8c95d42" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=bd78bad8" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -17080,6 +17158,7 @@ The line <code>tokenizer = GPT2Tokenizer.from_pretrained(model_name)</code> load
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
 <pre>The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input&#39;s `attention_mask` to obtain reliable results.
 Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.
 </pre>
 </div>
 </div>
@@ -17153,7 +17232,7 @@ The line <code>generated_text = tokenizer.decode(output[0], skip_special_tokens=
 </div>
 
 </div>
-<div id="cell-id=6ad86929" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=5a795f6a" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -17181,20 +17260,20 @@ When this line of code is executed, it will print a message to the console that 
 </div>
 </div>
 </div>
-<div id="cell-id=82703c94" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=0b571360" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Dive-Deeper:-Using-Hugging-Face-Transformers-for-Text-Generation**">Dive Deeper: Using Hugging Face Transformers for Text Generation**<a class="anchor-link" href="#Dive-Deeper:-Using-Hugging-Face-Transformers-for-Text-Generation**">&#182;</a></h3><ol>
+<h3 id="Dive-Deeper:-Using-Hugging-Face-Transformers-for-Text-Generation"><a id="toc2_5_2_" /><a href="#toc0_">Dive Deeper: Using Hugging Face Transformers for Text Generation</a><a class="anchor-link" href="#Dive-Deeper:-Using-Hugging-Face-Transformers-for-Text-Generation">&#182;</a></h3><ol>
 <li>Import the required classes and initialize a GPT-2 model and tokenizer. Use the 'gpt2' model variant and store the tokenizer in the variable 'tokenizer' and the model in the variable 'model_new'.</li>
 </ol>
 
 </div>
 </div>
 </div>
-</div><div id="cell-id=87648107" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div id="cell-id=e3b12512" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -17331,7 +17410,7 @@ When this line of code is executed, it will print a message to the console that 
 </div>
 
 </div>
-<div id="cell-id=8d070a9c" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=963ed4b8" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -17380,13 +17459,13 @@ token_count = len(tokenizer.encode(custom_generated_text))
 </div>
 </div>
 </div>
-<div id="cell-id=c9abc88a" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=a948b606" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Basics-of-Language-Processing">Basics of Language Processing<a class="anchor-link" href="#Basics-of-Language-Processing">&#182;</a></h2><p>Language processing, also known as <strong>natural language processing (NLP)</strong>, is a field of study that focuses on the interaction between computers and human language. It involves the development of algorithms and techniques to enable computers to understand, interpret, and generate human language in a way that is meaningful and useful.</p>
+<h2 id="Basics-of-Language-Processing"><a id="toc2_6_" /><a href="#toc0_">Basics of Language Processing</a><a class="anchor-link" href="#Basics-of-Language-Processing">&#182;</a></h2><p>Language processing, also known as <strong>natural language processing (NLP)</strong>, is a field of study that focuses on the interaction between computers and human language. It involves the development of algorithms and techniques to enable computers to understand, interpret, and generate human language in a way that is meaningful and useful.</p>
 <p>The field of language processing encompasses a wide range of tasks, including but not limited to:</p>
 <ol>
 <li><p><strong>Tokenization</strong>: Breaking down a text into smaller units, such as words or sentences, known as tokens.</p>
@@ -17413,29 +17492,29 @@ token_count = len(tokenizer.encode(custom_generated_text))
 </div>
 </div>
 </div>
-<div id="cell-id=ffbd02a5" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=d9f3a071" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Using-NLTK-dan-spaCy-for-simple-text-processing">Using <code>NLTK</code> dan <code>spaCy</code> for simple text processing<a class="anchor-link" href="#Using-NLTK-dan-spaCy-for-simple-text-processing">&#182;</a></h3>
+<h3 id="Using-NLTK-dan-spaCy-for-simple-text-processing"><a id="toc2_6_1_" /><a href="#toc0_">Using <code>NLTK</code> dan <code>spaCy</code> for simple text processing</a><a class="anchor-link" href="#Using-NLTK-dan-spaCy-for-simple-text-processing">&#182;</a></h3>
 </div>
 </div>
 </div>
 </div>
-<div id="cell-id=915d24a5" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=fc66d72e" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Importing-the-Required-Libraries">Importing the Required Libraries<a class="anchor-link" href="#Importing-the-Required-Libraries">&#182;</a></h4><p>Begin by importing the necessary libraries for text processing, such as <code>NLTK</code> and <code>spaCy</code>.</p>
+<h4 id="Importing-the-Required-Libraries"><a id="toc2_6_1_1_" /><a href="#toc0_">Importing the Required Libraries</a><a class="anchor-link" href="#Importing-the-Required-Libraries">&#182;</a></h4><p>Begin by importing the necessary libraries for text processing, such as <code>NLTK</code> and <code>spaCy</code>.</p>
 
 </div>
 </div>
 </div>
-</div><div id="cell-id=e136fe80" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div id="cell-id=a202b0bd" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -17454,18 +17533,18 @@ token_count = len(tokenizer.encode(custom_generated_text))
 </div>
 
 </div>
-<div id="cell-id=d4e0324d" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=d8a20427" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Preprocessing-the-Text">Preprocessing the Text<a class="anchor-link" href="#Preprocessing-the-Text">&#182;</a></h4><p>Perform basic text preprocessing tasks, such as tokenization and removing stop words. Tokenization is a crucial step in natural language processing tasks as it breaks down text into smaller units for further analysis, processing, or modeling. Removing stop words helps eliminate noise and focus on more meaningful words when performing text analysis, classification, or other NLP tasks.</p>
+<h4 id="Preprocessing-the-Text"><a id="toc2_6_1_2_" /><a href="#toc0_">Preprocessing the Text</a><a class="anchor-link" href="#Preprocessing-the-Text">&#182;</a></h4><p>Perform basic text preprocessing tasks, such as tokenization and removing stop words. Tokenization is a crucial step in natural language processing tasks as it breaks down text into smaller units for further analysis, processing, or modeling. Removing stop words helps eliminate noise and focus on more meaningful words when performing text analysis, classification, or other NLP tasks.</p>
 
 </div>
 </div>
 </div>
-</div><div id="cell-id=1b96eb9a" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div id="cell-id=fc77c69b" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -17559,7 +17638,7 @@ Tokens: [&#39;This&#39;, &#39;is&#39;, &#39;a&#39;, &#39;sample&#39;, &#39;sente
 </div>
 
 </div>
-<div id="cell-id=d873e60c" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=dc511ad3" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -17571,18 +17650,18 @@ Tokens: [&#39;This&#39;, &#39;is&#39;, &#39;a&#39;, &#39;sample&#39;, &#39;sente
 </div>
 </div>
 </div>
-<div id="cell-id=a04ba66e" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=48ff34aa" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Lemmatization-or-Stemming-(Optional)">Lemmatization or Stemming (Optional)<a class="anchor-link" href="#Lemmatization-or-Stemming-(Optional)">&#182;</a></h4><p>Apply lemmatization or stemming to reduce words to their base or root form. Both lemmatization and stemming help in reducing variations of words to their base forms, which can be useful for tasks such as information retrieval, text analysis, or language modeling. Choosing between lemmatization and stemming depends on the specific requirements of your application or task.</p>
+<h4 id="Lemmatization-or-Stemming-(Optional)"><a id="toc2_6_1_3_" /><a href="#toc0_">Lemmatization or Stemming (Optional)</a><a class="anchor-link" href="#Lemmatization-or-Stemming-(Optional)">&#182;</a></h4><p>Apply lemmatization or stemming to reduce words to their base or root form. Both lemmatization and stemming help in reducing variations of words to their base forms, which can be useful for tasks such as information retrieval, text analysis, or language modeling. Choosing between lemmatization and stemming depends on the specific requirements of your application or task.</p>
 
 </div>
 </div>
 </div>
-</div><div id="cell-id=9c4590e7" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div id="cell-id=cf64d9ff" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -17680,7 +17759,7 @@ Stemmed Tokens: [&#39;sampl&#39;, &#39;sentenc&#39;, &#39;.&#39;]
 </div>
 
 </div>
-<div id="cell-id=61140509" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=4f82d7a8" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -17697,18 +17776,18 @@ Stemmed Tokens: [&#39;sampl&#39;, &#39;sentenc&#39;, &#39;.&#39;]
 </div>
 </div>
 </div>
-<div id="cell-id=63b7dd8c" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=5951dc86" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Named-Entity-Recognition-(NER)-using-spaCy-(Optional)">Named Entity Recognition (NER) using spaCy (Optional)<a class="anchor-link" href="#Named-Entity-Recognition-(NER)-using-spaCy-(Optional)">&#182;</a></h4><p>Perform named entity recognition to extract entities from the text. This information can be useful in various applications, such as information extraction, question-answering systems, or data analysis.</p>
+<h4 id="Named-Entity-Recognition-(NER)-using-spaCy-(Optional)"><a id="toc2_6_1_4_" /><a href="#toc0_">Named Entity Recognition (NER) using spaCy (Optional)</a><a class="anchor-link" href="#Named-Entity-Recognition-(NER)-using-spaCy-(Optional)">&#182;</a></h4><p>Perform named entity recognition to extract entities from the text. This information can be useful in various applications, such as information extraction, question-answering systems, or data analysis.</p>
 
 </div>
 </div>
 </div>
-</div><div id="cell-id=013dc871" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div id="cell-id=fa852d58" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -17796,7 +17875,7 @@ Stemmed Tokens: [&#39;sampl&#39;, &#39;sentenc&#39;, &#39;.&#39;]
 </div>
 
 </div>
-<div id="cell-id=3651744e" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=33bdaa0e" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -17808,13 +17887,510 @@ Stemmed Tokens: [&#39;sampl&#39;, &#39;sentenc&#39;, &#39;.&#39;]
 </div>
 </div>
 </div>
-<div id="cell-id=8d960abb" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div id="cell-id=9bb410ab" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Summary">Summary<a class="anchor-link" href="#Summary">&#182;</a></h2><p>In conclusion, this section provided an introduction to Python environment. Additionally, we covered the basics of Python programming for language preprocessing, including variables, data types, operations, and control structures. We delved into the field of Natural Language Processing (NLP) and discussed word embeddings, major text libraries in Python (such as NLTK and spaCy), and the importance of text preprocessing and tokenization. Through demonstrations and examples, we gained practical insights into utilizing these libraries for simple text processing tasks. By building a solid foundation in these areas, participants will be well-equipped to delve further into the fascinating world of Generative AI and LLMs.</p>
+<h2 id="Reading-External-Data-using-Pandas"><a id="toc2_7_" /><a href="#toc0_">Reading External Data using Pandas</a><a class="anchor-link" href="#Reading-External-Data-using-Pandas">&#182;</a></h2><p>For our upcoming courses and projects, we'll be delving into the practical application of Large Language Models (LLMs) using external data sources. This will include working with diverse types of tabular data, such as <strong>CSV files, text files (TXT), and SQLite databases</strong>. To seamlessly integrate these data sources with our LLM workflows, we'll leverage one of the most widely-used libraries in Python: pandas.</p>
+<p>Pandas is an essential tool for data manipulation and analysis. With its intuitive data structures like DataFrames and Series, pandas offers a versatile and efficient way to read, clean, transform, and analyze data. This library empowers us to effortlessly load external data, prepare it for LLM tasks, and derive valuable insights.</p>
+<p>Through `pandas``, we can effortlessly:</p>
+<ol>
+<li><p><strong>Read Data from Various Sources:</strong>
+Whether it's CSV files containing structured data, raw text files, or SQLite databases housing relational information, pandas provides dedicated functions like <code>read_csv()</code>, <code>read_table()</code>, and <code>read_sql_query()</code> to fetch data into the familiar DataFrame format. This unified approach enables a seamless transition from external data to analysis-ready formats.</p>
+</li>
+<li><p><strong>Clean and Transform Data:</strong>
+Data often requires cleaning and preprocessing before feeding it into LLMs. Pandas equips us with tools to handle missing values, filter and sort data, perform arithmetic operations, and reshape datasets, streamlining the data preparation process.</p>
+</li>
+<li><p><strong>Integrate with LLM Tasks:</strong>
+After loading data, pandas allows us to apply LLM-specific tasks. We can tokenize text, convert it into numerical format, and structure it into sequences that LLMs can understand. Additionally, we can create custom functions to preprocess data further and handle specific LLM input requirements.</p>
+</li>
+<li><p><strong>Facilitate Exploratory Analysis:</strong>
+Exploring data is a crucial step before implementing LLMs. Pandas lets us quickly compute descriptive statistics, generate visualizations, and understand the characteristics of our dataset. This exploration aids in identifying patterns, trends, and potential areas for LLM application.</p>
+</li>
+</ol>
+<p>In our journey of merging external data and LLMs, pandas serves as a bridge that connects these two realms seamlessly. Its capabilities empower us to efficiently prepare data for LLM tasks, maximizing the quality and relevance of the insights we can extract. By harnessing the power of pandas alongside Large Language Models, we unlock a wealth of possibilities for understanding, transforming, and generating meaningful content from diverse external datasets.</p>
+
+</div>
+</div>
+</div>
+</div><div id="cell-id=ed168375" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># import the library</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div id="cell-id=78086896" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Reading-*.csv-Files"><a id="toc2_7_1_" /><a href="#toc0_">Reading <code>*.csv</code> Files</a><a class="anchor-link" href="#Reading-*.csv-Files">&#182;</a></h3><p>CSV (Comma-Separated Values) files are a common format for storing structured data. Pandas provides the <code>read_csv()</code> function to read data from CSV files and create a DataFrame.</p>
+
+</div>
+</div>
+</div>
+</div><div id="cell-id=71f1d227" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Read csv files</span>
+
+<span class="n">rice</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data_input/rice.csv&#39;</span><span class="p">)</span>
+<span class="n">rice</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>receipt_id</th>
+      <th>receipts_item_id</th>
+      <th>purchase_time</th>
+      <th>category</th>
+      <th>sub_category</th>
+      <th>format</th>
+      <th>unit_price</th>
+      <th>discount</th>
+      <th>quantity</th>
+      <th>yearmonth</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>9622257</td>
+      <td>32369294</td>
+      <td>7/22/2018 21:19</td>
+      <td>Rice</td>
+      <td>Rice</td>
+      <td>supermarket</td>
+      <td>128000.0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2018-07</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>9446359</td>
+      <td>31885876</td>
+      <td>7/15/2018 16:17</td>
+      <td>Rice</td>
+      <td>Rice</td>
+      <td>minimarket</td>
+      <td>102750.0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2018-07</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>9470290</td>
+      <td>31930241</td>
+      <td>7/15/2018 12:12</td>
+      <td>Rice</td>
+      <td>Rice</td>
+      <td>supermarket</td>
+      <td>64000.0</td>
+      <td>0</td>
+      <td>3</td>
+      <td>2018-07</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>9643416</td>
+      <td>32418582</td>
+      <td>7/24/2018 8:27</td>
+      <td>Rice</td>
+      <td>Rice</td>
+      <td>minimarket</td>
+      <td>65000.0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2018-07</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>9692093</td>
+      <td>32561236</td>
+      <td>7/26/2018 11:28</td>
+      <td>Rice</td>
+      <td>Rice</td>
+      <td>supermarket</td>
+      <td>124500.0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2018-07</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div id="cell-id=d036aa76" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Absolutely, reading different types of files using pandas is quite straightforward. The <code>read_csv()</code> function is a versatile tool, and pandas provides similar functions for reading other file formats as well. Let's explore a reference example for reading various file types:</p>
+<p><strong>1. Reading TXT Files:</strong>
+For tab-separated values (TSV) in a TXT file named <code>data.txt</code>, you can use <code>read_csv()</code> and specify the delimiter as <code>\t</code>:</p>
+<div class="highlight"><pre><span></span><span class="c1"># Read tab-separated TXT file</span>
+<span class="n">txt_file_path</span> <span class="o">=</span> <span class="s1">&#39;data.txt&#39;</span>
+<span class="n">df_txt</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">txt_file_path</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
+
+<span class="c1"># Display the first few rows of the DataFrame</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_txt</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+<p><strong>2. Reading Excel (XLSX) Files:</strong>
+To read data from Excel files, such as <code>data.xlsx</code>, you can use <code>read_excel()</code>:</p>
+<div class="highlight"><pre><span></span><span class="c1"># Read Excel file</span>
+<span class="n">xlsx_file_path</span> <span class="o">=</span> <span class="s1">&#39;data.xlsx&#39;</span>
+<span class="n">df_xlsx</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">xlsx_file_path</span><span class="p">)</span>
+
+<span class="c1"># Display the first few rows of the DataFrame</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_xlsx</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+<p><strong>3. Reading JSON Files:</strong>
+JSON files can be read using <code>read_json()</code>. If you have a JSON file named <code>data.json</code>:</p>
+<div class="highlight"><pre><span></span><span class="c1"># Read JSON file</span>
+<span class="n">json_file_path</span> <span class="o">=</span> <span class="s1">&#39;data.json&#39;</span>
+<span class="n">df_json</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="n">json_file_path</span><span class="p">)</span>
+
+<span class="c1"># Display the first few rows of the DataFrame</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_json</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+<p><strong>4. Reading HTML Tables (from URL):</strong>
+Pandas can even read HTML tables directly from URLs using <code>read_html()</code>:</p>
+<div class="highlight"><pre><span></span><span class="c1"># Read HTML table from URL</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://example.com/table.html&#39;</span>
+<span class="n">tables</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_html</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+<span class="n">df_html</span> <span class="o">=</span> <span class="n">tables</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># Assuming the desired table is the first one</span>
+
+<span class="c1"># Display the first few rows of the DataFrame</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_html</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+</div>
+<div id="cell-id=13601f86" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Reading-SQLite-Databases"><a id="toc2_7_2_" /><a href="#toc0_">Reading SQLite Databases</a><a class="anchor-link" href="#Reading-SQLite-Databases">&#182;</a></h3><h2 id="Database-Connection"><a id="toc2_8_" /><a href="#toc0_">Database Connection</a><a class="anchor-link" href="#Database-Connection">&#182;</a></h2><p>There are numerous Python packages that provide functionalities for data analysts to work with databases. Here are some examples:</p>
+<br>
+<div class="alert alert-success">
+<details>
+    <summary><b>✨ Connecting to MySQL</b></summary>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pymysql</span>
+
+<span class="n">conn</span> <span class="o">=</span> <span class="n">pymysql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+    <span class="n">host</span> <span class="o">=</span> <span class="n">HOST_NAME</span><span class="p">,</span>
+    <span class="n">port</span> <span class="o">=</span> <span class="n">PORT_NUMBER</span><span class="p">,</span>
+    <span class="n">user</span> <span class="o">=</span> <span class="n">USER_NAME</span><span class="p">,</span>
+    <span class="n">password</span> <span class="o">=</span> <span class="n">PASSWORD</span><span class="p">,</span>
+    <span class="n">db</span> <span class="o">=</span> <span class="n">DATABASE_NAME</span><span class="p">)</span>
+</pre></div>
+</details>
+<br>
+<details>
+    <summary><b>✨ Connecting to Oracle</b></summary>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">cx_Oracle</span>
+
+<span class="c1"># data source name from tnsnames.ora file</span>
+<span class="n">dsn_tns</span> <span class="o">=</span> <span class="n">cx_Oracle</span><span class="o">.</span><span class="n">makedsn</span><span class="p">(</span>
+    <span class="n">HOST_NAME</span><span class="p">,</span>
+    <span class="n">PORT_NUMBER</span>
+    <span class="n">service_name</span> <span class="o">=</span> <span class="n">SERVICE_NAME</span><span class="p">)</span>
+
+<span class="c1"># connection</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">cx_Oracle</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+    <span class="n">user</span> <span class="o">=</span> <span class="n">USER_NAME</span><span class="p">,</span>
+    <span class="n">password</span> <span class="o">=</span> <span class="n">PASSWORD</span><span class="p">,</span>
+    <span class="n">dsn</span> <span class="o">=</span> <span class="n">dsn_tns</span><span class="p">)</span>
+</pre></div>
+</details>
+<br>
+<details>
+    <summary><b>✨ Connecting to PostgreSQL</b></summary>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
+
+<span class="n">conn</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+    <span class="n">host</span> <span class="o">=</span> <span class="n">HOST_NAME</span><span class="p">,</span>
+    <span class="n">port</span> <span class="o">=</span> <span class="n">PORT_NUMBER</span><span class="p">,</span>
+    <span class="n">user</span> <span class="o">=</span> <span class="n">USER_NAME</span><span class="p">,</span>
+    <span class="n">password</span> <span class="o">=</span> <span class="n">PASSWORD</span><span class="p">,</span>
+    <span class="n">database</span> <span class="o">=</span> <span class="n">DATABASE_NAME</span><span class="p">)</span>
+</pre></div>
+</details>
+<br>
+<details>
+    <summary><b>✨ Connecting to Microsoft SQL Server</b></summary>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyodbc</span> 
+<span class="n">conn</span> <span class="o">=</span> <span class="n">pyodbc</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+    <span class="s1">&#39;Driver={ODBC Driver 17 for SQL Server};&#39;</span>
+    <span class="s1">&#39;Server=host;&#39;</span>
+    <span class="s1">&#39;PORT=1433;&#39;</span>
+    <span class="s1">&#39;UID=user;&#39;</span>
+    <span class="s1">&#39;PWD=password;&#39;</span>
+    <span class="s1">&#39;Database=database;&#39;</span><span class="p">)</span>
+</pre></div>
+</details>
+</div>
+<p>Then, to read the data, we use <code>pd.read_sql_query()</code> and provide the established connection:</p>
+<div class="highlight"><pre><span></span><span class="n">sales</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM sales&quot;</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
+</pre></div>
+<p>When passing the <code>conn</code> object, <code>pandas</code> uses <a href="https://www.sqlalchemy.org/">SQLAlchemy</a>, making it compatible with various databases. Rest assured, this is not something you need to worry about in this learning stage. As an initial step, let's try connecting Jupyter Notebook to an SQLite database (using the <code>sqlite3</code> package) referred to as the <strong>connection</strong>:</p>
+
+</div>
+</div>
+</div>
+</div><div id="cell-id=bb1df44f" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div id="cell-id=097f6f67" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Connect to SQLite database</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;data_input/chinook.db&#39;</span><span class="p">)</span>
+<span class="n">conn</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;sqlite3.Connection at 0x7fed8170d540&gt;</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div id="cell-id=3f6961e1" class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Read data from SQL query into DataFrame</span>
+<span class="n">query</span> <span class="o">=</span> <span class="s1">&#39;SELECT * FROM albums&#39;</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div id="cell-id=f20dcb25" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Display the first few rows of the DataFrame</span>
+<span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>AlbumId</th>
+      <th>Title</th>
+      <th>ArtistId</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>For Those About To Rock We Salute You</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>Balls to the Wall</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>Restless and Wild</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>Let There Be Rock</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>Big Ones</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div id="cell-id=0da03093" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Summary"><a id="toc3_" /><a href="#toc0_">Summary</a><a class="anchor-link" href="#Summary">&#182;</a></h1><p>In conclusion, this section provided an introduction to Python environment. Additionally, we covered the basics of Python programming for language preprocessing, including variables, data types, operations, and control structures. We delved into the field of Natural Language Processing (NLP) and discussed word embeddings, major text libraries in Python (such as NLTK and spaCy), and the importance of text preprocessing and tokenization. Through demonstrations and examples, we gained practical insights into utilizing these libraries for simple text processing tasks. By building a solid foundation in these areas, participants will be well-equipped to delve further into the fascinating world of Generative AI and LLMs.</p>
 
 </div>
 </div>
