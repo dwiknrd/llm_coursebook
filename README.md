@@ -84,7 +84,7 @@ Get ready to embark on an exciting journey into the world of LLM and Generative 
    - Introduction to LlamaIndex and its usage in information extraction
    - Demonstration of using LangChain and OpenAI to build a Question-Answering System with website data
 
-- **Ethical Considerations and Future Implications of Generative AI with Large Language Models (LLM)**
+- **Tips and Tricks in prompting with Large Language Models (LLM)**
    - A language for LLM prompt design: Guidance
    - Understanding the ethical considerations of Generative AI
    - Impact on privacy, bias, and misinformation
