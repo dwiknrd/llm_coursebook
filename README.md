@@ -68,12 +68,9 @@ Get ready to embark on an exciting journey into the world of LLM and Generative 
    - Usage of embeddings for text classification and contextual understanding
    - Demonstration of embeddings usage in advanced tasks
 
-## Module 4: Using LLM for Web Scraping and Prompt Design
-- **Leveraging Large Language Models (LLM) for Web Scraping and Information Extraction**
-   - Using LLM for web scraping
-   - Introduction to the steps involved in connecting website URLs with LLM
-   - Introduction to LlamaIndex and its usage in web scraping
-   - Demonstration of using LangChain and OpenAI to build a Question-Answering System with website data
+## Module 4: Build Chat AI apps with Streamlit + LangChain
+
+- **Build Chat AI apps with Streamlit + LangChain**
 
 - **Optimizing Large Language Models (LLM) for Performance Enhancement**
    - Demonstration of using LlamaIndex
@@ -81,9 +78,16 @@ Get ready to embark on an exciting journey into the world of LLM and Generative 
    - Using LangChain's Caching to enhance LLM performance
    - Demonstration of prompt design and caching to maximize LLM usage
 
+- **Leveraging Large Language Models (LLM) for Web Scraping and Information Extraction**
+   - Using LLM for automated Information Extraction
+   - Information Extraction set up using LLM
+   - Introduction to LlamaIndex and its usage in information extraction
+   - Demonstration of using LangChain and OpenAI to build a Question-Answering System with website data
+
 - **Ethical Considerations and Future Implications of Generative AI with Large Language Models (LLM)**
    - A language for LLM prompt design: Guidance
    - Understanding the ethical considerations of Generative AI
    - Impact on privacy, bias, and misinformation
    - Responsible user of Large Language Models in society
    - Discussion on the future of Generative AI and its potential impact
+ 
