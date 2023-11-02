@@ -79,7 +79,7 @@ Get ready to embark on an exciting journey into the world of LLM and Generative 
    - Demonstration of prompt design and caching to maximize LLM usage
 
 - **Leveraging Large Language Models (LLM) for Web Scraping and Information Extraction**
-   - Using LLM for automated Information Extraction
+   - Using LLM for query any website
    - Information Extraction set up using LLM
    - Introduction to LlamaIndex and its usage in information extraction
    - Demonstration of using LangChain and OpenAI to build a Question-Answering System with website data
