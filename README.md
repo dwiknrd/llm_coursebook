@@ -71,6 +71,12 @@ Get ready to embark on an exciting journey into the world of LLM and Generative 
 ## Module 4: Build Chat AI apps with Streamlit + LangChain
 
 - **Build Chat AI apps with Streamlit + LangChain**
+   - Introduction to Streamlit and LangChain
+   - Building the Chat Interface
+   - Integrating NLP with LangChain
+   - Building a Simple Chatbot
+   - Adding Advanced Features
+   - Deployment and Sharing
 
 - **Optimizing Large Language Models (LLM) for Performance Enhancement**
    - Demonstration of using LlamaIndex
